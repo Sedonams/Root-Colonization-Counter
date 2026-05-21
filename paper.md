@@ -1,34 +1,28 @@
 ---
 title: 'A Digital Microscopy Counter: Keyboard-Driven Web Application for Rapid Counting and Data Integrity Stewardship'
 tags:
-  - Arbuscular mycorrhizal fungi
-  - Root colonization
-  - Web application
-  - Microscopy
-  - Fungi
+  - arbuscular mycorrhizal fungi
+  - root colonization
+  - web application
+  - microscopy
+  - soil ecology
 authors:
   - name: Sedona Marie Spann
     orcid: 0009-0006-9844-1235
-    equal-contrib: true
     affiliation: "1"
 affiliations:
- - name: Northern Arizona University, AZ, United States
+ - name: School of Earth and Sustainability, Northern Arizona University, Flagstaff, Arizona, United States
    index: 1
 date: 20 May 2026
 bibliography: paper.bib
-
-# Optional fields if submitting to a AAS journal too, see this blog post:
-# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
-aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
-aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
 # Summary
 
 “Scoring” or quantifying fungal root colonization is a foundational task in 
-plant-soil ecology. Current procedures rely commonly on physical hand counters
+plant-soil ecology. Current methods rely commonly on physical hand counters
 necessitating post hoc data transcription, which is inherently inefficient and 
-introduces potential error.The Radical Root Colonization Counter, a lightweight 
+introduces potential error. The Radical Root Colonization Counter, a lightweight 
 web application, was designed to streamline grid intersect root scoring. This 
 tool enables rapid counting using personalized keyboard key combinations, audio
 feedback for quality control, customizable counter categories, and automated 
