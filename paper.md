@@ -22,13 +22,13 @@ bibliography: paper.bib
 “Scoring” or quantifying fungal root colonization is a foundational task in 
 plant-soil ecology. Current methods rely commonly on physical hand counters
 necessitating post hoc data transcription, which is inherently inefficient and 
-introduces potential error. The Radical Root Colonization Counter, a lightweight 
+introduces potential error. The `Radical Root Colonization Counter`, a lightweight 
 web application, was designed to streamline grid intersect root scoring. This 
 tool enables rapid counting using personalized keyboard key combinations, audio
 feedback for quality control, customizable counter categories, and automated 
 session data recording. Each sample “score” (total structure counts of one 
 sample) is stored locally and can append, or be exported as, a csv file ready 
-for statistical analyses.By removing manual transcription, adding immediate 
+for statistical analyses. By removing manual transcription, adding immediate 
 audio confirmation of structures recorded, and streamlining data input as well
 as output, this application improves the efficiency and data integrity of 
 human-scored root colonization workflows. The design process of this tool also 
@@ -63,8 +63,8 @@ sound confirms a button press, but not necessarily the correct button. Both new
 and old hand counters are also known to erroneously ‘click’ yet not add to a count, 
 therefore best practice necessitates looking up from a slide to make sure the 
 counter has counted, adding unnecessary mental load and seconds to every 
-intersection (a single root scored on a slide). Seconds will become minutes when 
-the user has 100 - 150 root intersections to count. Lastly, there is an inspiring 
+intersection (a single root score). Seconds become minutes when 
+the user has 100 - 200 root intersections to count. Lastly, there is an inspiring 
 abundance of research into the computational automation of human-scoring, yet an 
 absence of simple, customizable digital tools tailored to the widely used 
 human-scoring workflow. To address these shortcomings, the `Radical Root 
@@ -74,15 +74,6 @@ generation of data ready for statistical analyses without transcription. The too
 also emphasizes minimal technical interaction, real-time audio and visual feedback, 
 and instant generation of structured datasets. The counter is hosted on the github 
 page: sedonams.github.io/Root-Colonization-Counter/. 
-
-`Gala` was designed to be used by both astronomical researchers and by
-students in courses on gravitational dynamics or astronomy. It has already been
-used in a number of scientific publications [@Pearson:2017] and has also been
-used in graduate courses on Galactic dynamics to, e.g., provide interactive
-visualizations of textbook material [@Binney:2008]. The combination of speed,
-design, and support for Astropy functionality in `Gala` will enable exciting
-scientific explorations of forthcoming data releases from the *Gaia* mission
-[@gaia] by students and experts alike.
 
 # State of the field                                                                                                                  
 
@@ -111,24 +102,11 @@ and usability through its Python interface.
 
 # Software design
 
-`Gala`'s design philosophy is based on three core principles: (1) to provide a
-user-friendly, modular, object-oriented API, (2) to use community tools and
-standards (e.g., Astropy for coordinates and units handling), and (3) to use
-low-level code (C/C++/Cython) for performance while keeping the user interface
-in Python. Within each of the main subpackages in `gala` (`gala.potential`,
-`gala.dynamics`, `gala.integrate`, etc.), we try to maintain a consistent API
-for classes and functions. For example, all potential classes share a common
-base class and implement methods for computing the potential, forces, density,
-and other derived quantities at given positions. This also works for
-compositions of potentials (i.e., multi-component potential models), which
-share the potential base class but also act as a dictionary-like container for
-different potential components. As another example, all integrators implement a
-common interface for numerically integrating orbits. The integrators and core
-potential functions are all implemented in C without support for units, but the
-Python layer handles unit conversions and prepares data to dispatch to the C
-layer appropriately.Within the coordinates subpackage, we extend Astropy's
-coordinate classes to add more specialized coordinate frames and
-transformations that are relevant for Galactic dynamics and Milky Way research.
+The application was developed using an iterative, user-driven design process
+focused on usability during microscopy workflows. The software is implemented as
+a single-page web application using HTML, CSS, and JavaScript and operates
+entirely client-side within a web browser without requiring installation,
+internet connectivity, or server infrastructure.
 
 # Research impact statement
 
@@ -157,23 +135,6 @@ and active user community. Users span career stages from graduate students to
 faculty and other established researchers and represent institutions around the
 world. This broad adoption and active participation validate `Gala`'s role as
 core community infrastructure for galactic dynamics research.
-
-# Mathematics
-
-Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
-
-Double dollars make self-standing equations:
-
-$$\Theta(x) = \left\{\begin{array}{l}
-0\textrm{ if } x < 0\cr
-1\textrm{ else}
-\end{array}\right.$$
-
-You can also use plain \LaTeX for equations
-\begin{equation}\label{eq:fourier}
-\hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
-\end{equation}
-and refer to \autoref{eq:fourier} from text.
 
 # Citations
 
